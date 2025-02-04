@@ -1,0 +1,90 @@
+\documentclass{tpu-sotu}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% usepackage（必要に応じて追加する）
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{ascmac}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{mathptmx,txfonts}
+\usepackage{comment}
+\usepackage{url}
+\usepackage{hhline}
+
+\usepackage{amsmath}
+\usepackage[T1]{fontenc}
+
+\tabcolsep = .4cm
+\renewcommand\arraystretch{1.1}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% タイトルの設定
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 名前
+\author{中川 航輝}
+% 学籍番号
+\gakusekibangou{2120030}
+% 所属
+\department{情報システム工学科}
+% 指導教員
+\professor{岩本 健嗣}
+% タイトル
+\title{音楽嗜好の共有を通じた段階的な自己開示が受容性に与える影響}
+\etitle{The Impact of Progressive Self-Disclosure through Musical Preference Sharing on Interpersonal Acceptance}
+
+% 提出年月
+\date{令和6年(2024年) 2月}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ここから文章が始まります
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+% 表紙の設定
+\maketitle
+\clearpage
+
+% 目次の設定
+\pagenumbering{roman}
+\tableofcontents
+\clearpage
+\pagenumbering{arabic}
+
+
+% 1章
+\input{./1st/chapter1}
+% 2章
+\input{./2nd/chapter2}
+% 3章
+\input{./3rd/chapter3}
+% 4章
+\input{./4th/chapter4}
+% 5章
+\input{./5th/chapter5}
+% 6章
+% \input{./6th/chapter6}
+
+
+% 謝辞
+\chapter*{謝辞}
+岩本先生，高田くん，実験協力してくれた20名の被験者，論文を添削してくれた山北さん，高田くん，二村くん，本当にありがとう！
+OBの鈴木さん，山内さん，藤尾さんにもスーパー感謝です！！
+
+% 本研究を進めるにあたり，研究の内容，論文の執筆など，終始適切なご指導を賜りました，岩本健嗣教授には心から感謝申し上げます．
+% 実験協力してくれた20名の被験者に感謝
+% 論文の添削してくれた先輩方
+% 高田のこともかく
+% ここに謹んでお礼申し上げます．
+
+\addcontentsline{toc}{chapter}{\numberline{}謝辞}
+
+% 参考文献
+\newpage
+\addcontentsline{toc}{chapter}{\numberline{}参考文献}
+\bibliography{cite}
+\bibliographystyle{ipsjunsrt}
+
+\end{document}
